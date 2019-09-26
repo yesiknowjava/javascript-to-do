@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="display-4">To Do List</h3>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-10">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="" id="addTask" aria-describedby="helpId"
+                        placeholder="Task name">
+                </div>
+
+            </div>
+            <div class="col-2">
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-md" onclick="toDo.addTaskClick()">Add Task</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr class="d-flex">
+                        <td class="col-1">S.No</td>
+                        <td class="col-1">Status</td>
+                        <td class="col-9">Task Name</td>
+                        <td class="col-1">Action</td>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    <tr>
+                        <td scope="row" colspan="3" class="text-center">No Items in Todo</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-danger btn-md" onclick="toDo.deleteAllTasks()">Delete All Tasks</button>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
